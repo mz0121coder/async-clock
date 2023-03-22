@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  min-height: 100vh;
+}
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  height: 300px;
+  box-shadow: 0 0 40px 20px #0ff;
+  border-radius: 100%;
+  animation: glow-pulse 5s linear 0s infinite;
+}
+.hand {
+  position: absolute;
+  height: 120px;
+  width: 5px;
+  border-top: 120px solid black;
+}
+.hide {
+  display: none;
+}
+
+#message-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.animate {
+  animation: scale 3s infinite;
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 40px 20px #0ff;
+  }
+
+  50% {
+    box-shadow: 0 0 10px 20px #0ff;
+  }
+
+  100% {
+    box-shadow: 0 0 40px 20px #0ff;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
