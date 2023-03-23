@@ -22,7 +22,7 @@ img {
   animation: glow-pulse 5s linear 0s infinite;
 }
 
-.hand, .minutes, .hours {
+.seconds, .minutes, .hours {
   position: absolute;
   height: 120px;
   width: 5px;
