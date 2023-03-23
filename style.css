@@ -1,10 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(63, 94, 251);
-  background: radial-gradient(circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(252, 70, 107, 1) 100%);
+  background: #A73717;
+  background: linear-gradient(135deg, #A73717 0%, #7A251D 100%);
   min-height: 100vh;
 }
 
@@ -26,7 +24,7 @@ img {
   position: absolute;
   height: 120px;
   width: 5px;
-  border-top: 120px solid black;
+  border-top: 120px solid #8B0000;
 }
 
 .hide {
@@ -71,4 +69,19 @@ img {
   100% {
     transform: scale(1);
   }
+}
+
+.brick {
+  background-color: #764A2D;
+  background-image: linear-gradient(45deg, #764A2D 25%, transparent 25%), linear-gradient(-45deg, #764A2D 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #764A2D 75%), linear-gradient(-45deg, transparent 75%, #764A2D 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+#clock-container.brick {
+  background-color: #D2B48C;
+}
+
+img.brick {
+  box-shadow: none;
 }
